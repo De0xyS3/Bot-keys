@@ -46,7 +46,7 @@ rm -f instala.* > /dev/null
 [[ $(dpkg --get-selections|grep -w "boxes"|head -1) ]] || apt-get install boxes -y &>/dev/null
 rm $(pwd)/$0 &> /dev/null
 ##source <(curl -sL https://raw.githubusercontent.com/ChumoGH/ChumoGH-Script/master/msg-bar/msg)
-source <(https://raw.githubusercontent.com/hhportugames/TESTETSET/main/bar/msg2)
+source <(curl -sL https://raw.githubusercontent.com/hhportugames/TESTETSET/main/bar/msg2)
 fun_ip () {
 MIP=$(ip addr | grep 'inet' | grep -v inet6 | grep -vE '127\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}' | head -1)
 MIP2=$(wget -qO- ipv4.icanhazip.com)
