@@ -176,6 +176,9 @@ msg -bar
 # permited=$(curl -sSL "$(ofus $keybot)/NetVPS/Bot-Gen-MultiScript/main/Control-IP")
 # [[ -z $keybot ]] && echo $link > /bin/downloadbot  || echo -e "$(ofus $keybot)" > /bin/downloadbot 
 # }
+
+
+wget --no-check-certificate -O /bin/ShellBot.sh -q https://raw.githubusercontent.com/hhportugames/VPSbot/main/ShellBot.sh && chmod +x /bin/ShellBot.sh
 permited=$(curl -sSL "https://raw.githubusercontent.com/hhportugames/TESTETSET/main/Control-IP") 
  [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
