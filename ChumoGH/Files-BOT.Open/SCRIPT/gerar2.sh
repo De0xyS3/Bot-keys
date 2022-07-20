@@ -435,7 +435,7 @@ gerar_key() {
   echo -e "$BARRA"
   echo -e "Instalador Oficial"
   echo -e "$BARRA"
-  echo "wget -q https://www.dropbox.com/s/gjmyq3cjpqicb1d/instala.sh; chmod 777 instala.sh;./instala.sh"
+  echo "wget -q https://www.dropbox.com/s/i87udxpj1lj17sa/instala.sh; chmod 777 instala.sh;./instala.sh"
   echo -e "$BARRA"
   read -p "Enter para finalizar"
 }
@@ -452,7 +452,7 @@ fix_key() {
   read -p "Nombre del Dueño de las Keys : " nomkey
   [[ $nomkey = 0 ]] && return
   [[ -z $nomkey ]] && {
-    [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/o4b7peng5ajp7mu/menu_credito")"
+    [[ -e /etc/menu_ito ]] && nomkey="$(cat /etc/menu_ito)" || nomkey="$(curl -sSL "https://www.dropbox.com/s/z38hj1mz3q9krso/menu_credito")"
   }
   msg -bar
   echo " Bienvenido, Porfavor ingresa el numero de keys a generar"
@@ -677,7 +677,7 @@ files_script() {
 # ERES ADMIRABLE, al lograr llegar hasta aqui
 # Moded creado por @ChumoGH
 
-wget -q -O $HOME/lista https://www.dropbox.com/s/gy153y8o65uqhk8/lista?dl=0 -o /dev/null
+wget -q -O $HOME/lista https://www.dropbox.com/s/g4zqgr3dwgj0f1g/lista?dl=0 -o /dev/null
 mv /etc/SCRIPT/gerar.sh /root/gerar.sh 
 echo -ne " ELIMINANDO FICHEROS ANTIGUOS " && rm -f /etc/SCRIPT/* && echo " OK " || echo " ERROR EN ELIMINAR "
 cd /etc/SCRIPT
@@ -722,7 +722,7 @@ bot_menu() {
   ) && echo -e "\033[1;32m [OK]" || echo -e "\033[1;31m [FAIL]"
   rm -rf /etc/ADM-db
   CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-  [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/hhportugames/TESTETSET/main/confbot-t.sh &>/dev/null && chmod +x ${CIDdir}/confbot.sh
+  [[ ! -e "${CIDdir}/confbot.sh" ]] && wget --no-check-certificate -O ${CIDdir}/confbot.sh https://raw.githubusercontent.com/NetVPS/Bot-Gen-MultiScript/main/ChumoGH/Files-BOT.Open/Varios/confbot-t.sh &>/dev/null && chmod +x ${CIDdir}/confbot.sh
   sed -i -e 's/\r$//' ${CIDdir}/confbot.sh
   source ${CIDdir}/confbot.sh
   bot_conf
